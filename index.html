@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Resource Kit</title>
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+<div id="main">
+
+    <div id="tab1">
+
+       <div class="tabin"> 
+        <img src="./butterfly.png" alt="">
+        <i class="ri-search-line"></i>
+    </div>
+
+       <div class="tabin">
+        <i class="ri-home-heart-line"></i>
+        <i class="ri-book-3-line"></i>
+        <i class="ri-menu-line"></i>
+        <i class="ri-user-3-line"></i>
+       </div>
+
+       <div class="tabin" id="tabin3">
+        <i class="ri-notification-3-line"></i>
+        <i class="ri-logout-box-r-line"></i>
+       </div>
+
+
+    </div>
+
+    <div id="tab2">
+
+        <div id="box1">
+
+            <div id="img">
+                <img src="http://www.liveenhanced.com/wp-content/uploads/2018/04/male-model-poses-26.jpg" alt="">
+            </div>
+            <div id="name">
+                <h1>Hi Mike,</h1>
+                <h2>welcome back.</h2>
+            </div>
+        </div>
+
+        <div id="box2">
+
+            <h1>Today</h1>
+            <h2>$19,892</h2>
+            <h3>Account Balance</h3>
+            <h4>$4,000</h4>
+            <h3>Year-to-Date Contributions</h3>
+            <h4>$1,892</h4>
+            <h3>Total Interest</h3>
+            <button>I want to <i class="ri-arrow-down-s-fill"></i></button>
+        </div>
+
+        <div id="box3">
+
+            <h1>Recent Transactions</h1>
+            <h2>2020-08-07</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+            <h2>2020-07-21</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+            <h2>2020-07-16</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+
+        </div>
+
+    </div>
+
+    <div id="tab3">
+
+        <div class="tab3box" id="cup1">
+           
+            <div id="tab3box1">
+                 <h1>Retirement Income</h1>
+                <h2>Starting Year 2056</h2>
+            </div>
+
+            <div id="tab3box2">
+                <div class="space">
+                <h1>$300,000</h1>
+                <h2>My Goal</h2>
+                </div>
+                <div class="space">
+                    <h1>59%</h1>
+                <h2>Goal Achieved</h2>
+                </div>
+                <div class="space">
+                    <h1>$300</h1>
+                <h2>Est. Monthly Income</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab3box" id="cup2">
+
+            <h1>Contributions Overtime</h1>
+
+            <div class="container">
+                <div class="chart">
+
+                    <canvas id="barChart" height="200px" width="300px"> </canvas>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="tab3box" id="cup3">
+
+            <div id="cup3one">
+                <h1>How do I compare to my peers?</h1>
+                <h2>These numbers represent current goal achievement</h2>
+            </div>
+
+            <div id="cup3two">
+
+                <div id="one">
+                    <h1>Age: Under 30 <i class="ri-arrow-down-s-fill"></i></h1>
+                    <h1>salary: K20-K30 <i class="ri-arrow-down-s-fill"></i></h1>
+                    <h1>Gender: Male <i class="ri-arrow-down-s-fill"></i></h1>
+                </div>
+                <div id="two">
+                    <div class="kit">
+                        <canvas id="doughnut" height="10" width="10"></canvas>
+                        <h1>Average</h1>
+                    </div>
+                  <div class="kit">  
+                    <canvas id="doughnut2" height="20" width="20"></canvas>
+                    <h1>Top</h1>
+                </div>
+                    <div class="kit">
+                        <canvas id="doughnut3" height="20" width="20"></canvas>
+                    <h1>Me</h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>   
+
+    </div> 
+
+   <div id="tab4">
+
+        <div id="card">
+            <h1>Retirement Strategy</h1>
+            <h2>Employee Contribution</h2>
+            <div class="box">
+                <input type="range" class="range" value="0" min="0" max="100" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+                <span id="rangeValue">0</span>
+            </div>
+
+            <h2>Retirement Age</h2>
+            <div class="box2">
+                <input type="range" class="range2" value="0" min="0" max="100" onmousemove="rangeSlider2(this.value)" onchange="rangeSlider2(this.value)">
+                <span id="rangeValue2">0</span>
+            </div>
+
+            <h3>Employer Contribution &nbsp;   &nbsp;    &nbsp;    &nbsp;&nbsp;   &nbsp;    &nbsp;    &nbsp;&nbsp;   &nbsp;      8.4%</h3>
+            <h4>Interest Rate &nbsp;   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5%</h4>
+            <button>Update</button>
+            <h5>View Help Docs <i class="ri-arrow-drop-right-line"></i></h5>
+
+        </div>
+
+        <div id="card2">
+
+           <h1>Are you considering a <br> <span>Housing Advance?</span></h1>
+           <h2>Limited time reduced interest.</h2>
+           <h5>Learn More <i class="ri-arrow-drop-right-line"></i></h5>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div id="page1">
+        <div id="nav">
+            <i class="ri-notification-3-line"></i>
+        </div>
+
+        
+        <div id="bottom">
+            <i class="ri-home-heart-line"></i>
+            <i class="ri-book-3-line"></i>
+            <i class="ri-menu-line"></i>
+            <i class="ri-user-3-line"></i>
+            <i class="ri-search-line"></i>
+        </div>
+
+        <div id="box1">
+
+            <div id="img">
+                <img src="http://www.liveenhanced.com/wp-content/uploads/2018/04/male-model-poses-26.jpg" alt="">
+            </div>
+            <div id="name">
+                <h1>Hi Mike,</h1>
+                <h2>welcome back.</h2>
+            </div>
+        </div>
+
+        <div id="box2">
+
+            <h1>Today</h1>
+            <h2>$19,892</h2>
+            <h3>Account Balance</h3>
+            <div id="box2in">
+             <div id="box2in1">
+                <h4>$4,000</h4>
+                <h3>Year-to-Date Contributions</h3>
+            </div>
+            <div id="box2in2">
+                 <h4>$1,892</h4>
+                <h3>Total Interest</h3>
+            </div>
+
+            </div>
+            <button>I want to...</button>
+        </div>
+
+        <div id="box3">
+
+            <h1>Recent Transactions</h1>
+            <h2>2020-08-07</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+            <h2>2020-07-21</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+            <h2>2020-07-16</h2>
+            <h3>Withdrawal Transfer to Bank-XXX11</h3>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="page2">
+
+        <div class="tab3box" id="cup1">
+           
+            <div id="tab3box1">
+                 <h1>Retirement Income</h1>
+                <h2>Starting Year 2056</h2>
+            </div>
+
+            <div id="tab3box2">
+                <div class="space">
+                <h1>$300,000</h1>
+                <h2>My Goal</h2>
+                </div>
+
+               <div id="spa"> 
+                <div class="space">
+                <h1>59%</h1>
+            <h2>Goal Achieved</h2>
+            </div>
+            <div class="space">
+                <h1>$300</h1>
+            <h2>Est. Monthly Income</h2>
+            </div>
+         </div>
+
+            </div>
+
+        </div>
+
+        
+
+       
+
+    </div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
